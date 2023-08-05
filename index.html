@@ -101,7 +101,7 @@
         <div class="col-md-6 col-lg-6 d-flex">
           <div class="img-about img d-flex align-items">
             <div class="overlay"></div>
-            <div class="img  align-self align-items-center" style="background-image:url(images/about.png);">
+            <div class="img  align-self align-items-center"style="background-image:url(images/about.png);">
             </div>
           </div>
         </div>
@@ -608,7 +608,21 @@
       }
     } 
   </script>
+<!-- <script>
+  function createRainbowText() {
+    const rainbowText = document.querySelector('.rainbow-text');
+    const text = rainbowText.textContent;
+    let result = '';
+    for (let i = 0; i < text.length; i++) {
+      const hue = (i / text.length) * 360;
+      result += `<span style="color: hsl(${hue}, 100%, 50%);">${text[i]}</span>`;
+    }
+    rainbowText.innerHTML = result;
+  }
 
+  createRainbowText();
+</script>
+ -->
 
 </body>
 
