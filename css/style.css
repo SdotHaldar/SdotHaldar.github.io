@@ -105,6 +105,28 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
+  .rainbow-text {
+    font-size: 36px;
+    color: transparent;
+    background: linear-gradient(90deg, #FFAC00, #FFFFFF);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rainbowAnimation 5s linear infinite;
+  }
+  
+  @keyframes rainbowAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 p {
   color: #E5E5E5;
   margin-top: 0;
